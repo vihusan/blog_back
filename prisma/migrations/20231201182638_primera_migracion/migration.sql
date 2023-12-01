@@ -1,9 +1,9 @@
 -- CreateTable
 CREATE TABLE `Post` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
-    `titulo` VARCHAR(191) NOT NULL,
-    `autor` VARCHAR(191) NOT NULL,
-    `contenido` VARCHAR(191) NOT NULL,
+    `titulo` VARCHAR(255) NOT NULL,
+    `autor` VARCHAR(255) NOT NULL,
+    `contenido` VARCHAR(10000) NOT NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
 
     PRIMARY KEY (`id`)
