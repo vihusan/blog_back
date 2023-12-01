@@ -7,10 +7,13 @@ API REST BASE NodeJs prueba tecnica
 ->    ./db/DumpBlog.sql
 dentro de estr proyecto.
 
-3. instalar las dependencias 
+3. Renombrar .env.example a .env y colocar el usuario y contraeña a la conexion de base de datos en la linea
+-> DATABASE_URL="mysql://usuario:password@localhost:3306/blog"
+
+4. instalar las dependencias 
 -> npm install
 
-4. correr el servicio 
+5. correr el servicio 
 -> npm run start
 
 
