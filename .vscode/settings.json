@@ -1,0 +1,49 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.format": true
+  },
+  "workbench.colorCustomizations": {
+    /*Activity bar*/
+    "activityBar.background": "#791178" /*foncto de la barra*/,
+    "activityBarBadge.background": "#efefef" /*color circulos de notificacion*/,
+    "activityBarBadge.foreground": "#ff0000" /*color texto dentro circulos*/,
+    "activityBar.activeBackground": "#090827" /*color fondo en seleccionado*/,
+    "banner.background": "#ff0000",
+    "activityBar.foreground": "#ffffff" /*color seleccion*/,
+    "activityBar.inactiveForeground": "#ffffff" /*color inactividad*/,
+    "activityBar.border": "#a5a5a5" /*borde de la barra de actividad*/,
+    "activityBar.activeFocusBorder": "#ff0000",
+
+    /*Colores sidebar*/
+    "sideBar.border": "#ac96f3",
+    "sideBar.foreground": "#ac96f3",
+
+    /*editor*/
+    "editor.selectionBackground": "#666d05",
+
+    /* Brascrumbs software*/
+    "breadcrumb.background": "#363513" /*color fondo*/,
+    "breadcrumb.foreground": "#e7e7e7" /*color letra*/,
+
+    /*Labels*/
+    "badge.background": "#58614b" /*fondo de los labels*/,
+
+    /*Tabs*/
+    "tab.activeForeground": "#ffffff" /*color de controles de pestañas*/,
+    "tab.activeBackground": "#58614b" /*color de pestañas*/,
+    "tab.border": "#ac96f3" /*color separacion tabs*/,
+    "tab.hoverBackground": "#464b3f" /*color en seleccion*/,
+
+    /*status bar*/
+    "statusBar.background": "#791178",
+    "statusBarItem.hoverBackground": "#090827",
+    "statusBarItem.remoteBackground": "#ff7b00",
+    "statusBarItem.remoteForeground": "#f6f6f6",
+
+    "titleBar.activeBackground": "#791178",
+    "titleBar.activeForeground": "#FCFCFE"
+  }
+}
