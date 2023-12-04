@@ -7,10 +7,10 @@ const prisma = new PrismaClient();
 
 export const getPost = async (req:Request, res : Response) => {
     try{
-        const {tb:tipoBusqueda, cb:cadenaDeBusqueda} = req.query;
-        const { id } =  req.body;
+        const {tb:tipoBusqueda, cb:cadenaDeBusqueda, id} = req.query;
         let query : object = {};
         let result : null | Post | Post [] = [];
+
 
         if(tipoBusqueda && cadenaDeBusqueda && !id) {
             query = {
@@ -29,7 +29,7 @@ export const getPost = async (req:Request, res : Response) => {
         }
 
         if(!tipoBusqueda && !cadenaDeBusqueda && id) {
-            result = await prisma.post.findUnique({where:{ id : id}});
+            result = await prisma.post.findUnique({where:{ id : parseInt(id)}});
         }
         
         if(!tipoBusqueda && !cadenaDeBusqueda && !id) {

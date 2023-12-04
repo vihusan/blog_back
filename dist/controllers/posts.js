@@ -14,8 +14,7 @@ const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
 const getPost = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { tb: tipoBusqueda, cb: cadenaDeBusqueda } = req.query;
-        const { id } = req.body;
+        const { tb: tipoBusqueda, cb: cadenaDeBusqueda, id } = req.query;
         let query = {};
         let result = [];
         if (tipoBusqueda && cadenaDeBusqueda && !id) {
@@ -34,7 +33,7 @@ const getPost = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
             });
         }
         if (!tipoBusqueda && !cadenaDeBusqueda && id) {
-            result = yield prisma.post.findUnique({ where: { id: id } });
+            result = yield prisma.post.findUnique({ where: { id: parseInt(id) } });
         }
         if (!tipoBusqueda && !cadenaDeBusqueda && !id) {
             const arrayPost = yield prisma.post.findMany();
