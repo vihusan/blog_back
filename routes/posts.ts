@@ -9,8 +9,8 @@ router.get('/', getPost);
 
 router.post('/', [ 
     check('titulo', 'El titulo es obligatorio').not().isEmpty(),
-    check('autor', 'El titulo es obligatorio').not().isEmpty(),
-    check('contenido', 'El titulo es obligatorio').not().isEmpty(),
+    check('autor', 'El autor es obligatorio').not().isEmpty(),
+    check('contenido', 'El contenido es obligatorio').not().isEmpty(),
     validarCampos
 ],postPost);
 

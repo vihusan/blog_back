@@ -8,8 +8,8 @@ const router = (0, express_1.Router)();
 router.get('/', posts_1.getPost);
 router.post('/', [
     (0, express_validator_1.check)('titulo', 'El titulo es obligatorio').not().isEmpty(),
-    (0, express_validator_1.check)('autor', 'El titulo es obligatorio').not().isEmpty(),
-    (0, express_validator_1.check)('contenido', 'El titulo es obligatorio').not().isEmpty(),
+    (0, express_validator_1.check)('autor', 'El autor es obligatorio').not().isEmpty(),
+    (0, express_validator_1.check)('contenido', 'El contenido es obligatorio').not().isEmpty(),
     validar_campos_1.validarCampos
 ], posts_1.postPost);
 exports.default = router;
